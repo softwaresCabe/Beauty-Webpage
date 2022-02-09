@@ -28,11 +28,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    
 
     <!-- Our CSS file -->
     <link rel="stylesheet" href="Assets/style/style.css" />
     <!-- This is the title that appears in the browser tag -->
-    <title>Beauty Webpage</title>
+    <title>Top Class Beauty - Home</title>
   </head>
   <!-- End head -->
 
@@ -40,19 +41,25 @@
   <body>
     <!-- Begin navbar -->
     <nav class="nav-wrapper" id="nav-container">
-      <div class="container">
+      <div class="container" >
         <!-- Buttons on navbar -->
         <a href="#!" class= "brand-logo"
           ><img src="Assets/style/images/logo.png"
         /></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-          <i class="material-icons">menu</i>
+          <i class="material-icons hover" id ="nav-menu-buttton">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
           <!-- Home button, active page -->
           <li class="active">
             <a class="hover" href="index.html"
               >|Home <i class="fa fa-home" aria-hidden="true"></i
+            ></a>
+          </li>
+           <!-- Pricing button, -->
+           <li>
+            <a class="hover" href="Assets/tabs/pricing.html"
+              >Pricing <i class="fa fa-tag" aria-hidden="true"></i
             ></a>
           </li>
         </ul>
@@ -67,18 +74,24 @@
           >|Home <i class="fa fa-home" aria-hidden="true"></i
         ></a>
       </li>
-      
+       <!-- Pricing Tab -->
+       <li >
+        <a href="Assets/tabs/pricing.html"
+          >Pricing <i class="fa fa-tag" aria-hidden="true"></i
+        ></a>
+      </li>
     </ul>
     <!-- End navbar -->
 
     <main>
+
       <!-- Begin header -->
       <div class="container body-container" id="header">
         <h3 class="header-text-title">
-          Beauty Page
+          Top Class Beauty
         </h3>
         <h5 class="header-text">
-          This is one beautiful Page
+          Motto
         </h5>
       </div>
       <!-- End header -->
@@ -88,39 +101,23 @@
         <div class="row">
 
           <!-- Menu/pricing card -->
-          <div class="col s12 m4">
+          <div class="col s12 l4">
             <div class="card small">
 
               <div class = "card-title">
-                Menu
+                Services: Description and Pricing
               </div>
 
               <div class="card-content">
                 <p>
-                  Item # 1
-                </p>
-
-                <p>
-                  Item # 2
-                </p>
-
-                <p>
-                  Item # 2
-                </p>
-
-                <p>
-                  Item # 3
-                </p>
-
-                <p>
-                  Item # 4
-                </p>
-
-                <p>
-                  Item # 5
+                  Please provide something you would like to say here about your services and pricing. 
+                  
+                  Gerneral overview (No specfic pricing)
                 </p>
 
               </div>
+
+              <button type="button" class="btn" onclick="location.href='Assets/tabs/pricing.html'">See Services</button>
             </div>
           </div>
 
@@ -128,22 +125,21 @@
 
           <!-- Contact Me Card -->
 
-          <div class="col s12 m4">
+          <div class="col s12 l4">
             <div class="card small">
 
             <div class = "card-title">
               Contact Information
             </div>
 
-            <div class="card-content">
+            <div class="card-content contact-info" >
               <p> 
                 Phone: 
                 <a href = "tel:951-533-2273" >951-533-2273 </a>
               </p>
 
-              <p> 
-                Email: 
-                <a href = "emailto:nivek2696@gmail.com" >Beauty@email.com</a>
+              <p font="times new roman"> 
+                Email: Beauty@Gmail.com
               </p>
 
             </div>
@@ -152,7 +148,7 @@
           
 
           <!-- Bio card -->
-          <div class="col s12 m4">
+          <div class="col s12 l4">
             <div class="card small">
 
             <div class = "card-title">
@@ -161,7 +157,7 @@
 
             <div class="card-content">
               <p>
-                Item # 1
+                Provide info about yourself and why potential customers should choose your business. (Experience, Portfolio, Personality, Ect...) 
               </p>
 
             </div>
